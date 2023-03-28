@@ -1,0 +1,147 @@
+@import url('https://fonts.googleapis.com/css2?family=Domine:wght@600;700;800&family=Source+Sans+Pro:wght@400;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Alkatra&display=swap');
+
+:root {
+    --brand: #f58419;
+    --body: #131212;
+    --dark: #414141;
+    --border-radius: 4px;
+    --shadow: 0px 4px 60px rgba(0, 0, 0, 0.14);
+}
+
+/* reset & helpers */
+body{
+    font-family:"Source Sans Pro", sans-serif;
+    line-height: 1.7;
+    color: var(--body);
+    letter-spacing: .1px;
+}
+
+h1,h2,h3,h4,h5,h6{
+    font-family:"Alkatra";
+    color: var(--dark);
+}
+#brand-heading{
+    color: var(--brand);
+}
+
+a{
+    font-weight: 600;
+    color: var(--dark);
+    text-decoration-line: underline;
+    text-decoration-style: solid;
+    text-decoration-color: var(--brand);
+    transition: all 0.4s linear;
+}
+a:hover{
+    color: var(--brand);
+}
+.footer-links a{
+    text-decoration: none;
+}
+
+section{
+    padding-top: 7%;
+    padding-bottom: 7%;
+}
+
+/* btn */
+.btn{
+    padding: 12px 28px;
+    font-size: 14px;
+    font-weight: 700;
+    border-radius: 30px;
+    transition: all 0.4s ease;
+}
+.btn:hover{
+    transform: translateY(-3px);
+
+}
+.btn-brand{
+    background-color: var(--brand);
+    color: white;
+}
+.btn-brand:hover{
+    background-color: var(--brand);
+    color: white;
+}
+
+/* Hero */
+.hero{
+ min-height: 90vh;
+background-size: cover !important;
+background-position: center !important;
+display: flex;
+align-items: center;
+}
+#hero-home{
+    background:linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)),url(../img/workout_trx.jpg);
+}
+#hero-workout{
+    background:linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)),url(../img/studio-desktop.jpg);
+}
+#hero-membership{
+    background:linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)),url(../img/aus_membership_C003_desktop_class.jpg);
+}
+.hero h1,h4{
+    color:white;
+}
+
+/* navbar */
+
+.navbar .navbar-nav .nav-link{
+    font-weight: 700;
+    font-size: 20px;
+
+}
+.navbar .navbar-nav .nav-link:hover, .navbar .navbar-nav .nav-link:active{
+    color: var(--brand);
+}
+
+/* member */
+
+
+#coach-mid{
+  
+    
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+ }
+ #member{ 
+    background:linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)),url(../img/member_cover.jpg);
+ }
+ #coach{ 
+    background:linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)),url(../img/aus_workout_C003_desktop_coaches.jpg); 
+ }
+ #coach-mem{ 
+    background:linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)),url(../img/aus_membership_C003_desktop_class.jpg); 
+ }
+.member_content{
+    padding:7%;
+}
+/* article */
+.article_card{
+    background:linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)),url(../img/Article_795x480_v2.jpg);
+   background-size: cover;
+   background-position: center;
+   display: flex;
+   align-items: center;
+}
+
+.project_wrapper{
+    height: 100%;
+}
+.project_wrapper img{
+    height: 100%;
+    object-fit: cover;
+}
+.project_wrapper video{
+    height: 100%;
+    object-fit: cover;
+}
+/* Footer */
+.footer_text p{
+    font-size: 12px;
+}
